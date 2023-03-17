@@ -67,6 +67,13 @@ h1 {
 @media (min-width: 36.0625em) {
   h1 {
     font-size: 2.8865075782rem;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 48.0625em) {
+  h1 {
+    font-size: 3.6532361537rem;
+    line-height: 4rem;
   }
 }
 
@@ -137,7 +144,7 @@ hr {
 }
 
 a {
-  color: hsl(198.0786026201, 100%, 40%);
+  color: hotpink;
   transition: all 0.1s ease-in-out;
 }
 
@@ -161,11 +168,36 @@ a:active {
     ---
     Creates a horizontal row with padding
 */
+.o-row {
+  padding: 1.5rem 1.5rem 0;
+  display: flow-root;
+}
+
+.o-row--primary {
+  background-color: hsl(198.0786026201, 100%, 50%);
+}
+
+.o-row--dark {
+  background-color: hsl(198.0786026201, 10%, 10%);
+  color: white;
+}
+
+@media (min-width: 48.0625em) {
+  .o-row--lg {
+    padding: 3rem 3rem 1.5rem;
+  }
+}
+
 /*
     Objects: Container
     ---
     Creates a horizontal container that sets de global max-width
 */
+.o-container {
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
 /*
     Objects: Layout
     ---
