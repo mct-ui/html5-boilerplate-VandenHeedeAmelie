@@ -64,6 +64,11 @@ h1 {
   line-height: 2rem;
   margin-bottom: 1.5rem;
 }
+@media (min-width: 36.0625em) {
+  h1 {
+    font-size: 2.8865075782rem;
+  }
+}
 
 h2 {
   font-size: 1.423828125rem;
@@ -136,12 +141,12 @@ a {
   transition: all 0.1s ease-in-out;
 }
 
-a:hover {
-  color: hsl(198.0786026201, 100%, 50%);
-}
-
 a:visited {
   color: hsl(198.0786026201, 100%, 40%);
+}
+
+a:hover {
+  color: hsl(198.0786026201, 100%, 50%);
 }
 
 a:active {

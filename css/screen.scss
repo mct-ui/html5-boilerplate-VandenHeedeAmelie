@@ -215,6 +215,15 @@ h1 {
   font-weight: 700;
   line-height: calc($baseline*4);
   margin-bottom: $space-m;
+
+  @include mq(bp1){
+    font-size: $ms9;
+    line-height: calc(baseline*6);
+  }
+  @include mq(bp2){
+    font-size: $ms11;
+    line-height: calc(baseline*8);
+  }
 }
 
 h2 {
@@ -288,12 +297,12 @@ a {
   transition: all 0.1s ease-in-out;
 }
 
-a:hover {
-  color: $color-primary-light;
-}
-
 a:visited {
   color: $color-primary;
+}
+
+a:hover {
+  color: $color-primary-light;
 }
 
 a:active {
